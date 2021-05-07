@@ -11,17 +11,17 @@
 		<div class="container login-container">
 			<h1 class="login-title">Create an Account</h1>
 
-			<form action="contact.php" method="POST" class="form login-form" >
+			<form action="contact.php" method="POST" class="form login-form" onsubmit="event.preventDefault(); onUserDetailsSubmit();">
 
 				<div class="input-container">
-					<input type="text" id="fullname" name="fullname" required=""  autocomplete="off"><br>
-			   	 	<label for="fullname">Full Name</label>
+					<input type="text" id="full_name" name="fullname" required=""  autocomplete="off"><br>
+			   	 	<label for="full_name">Full Name</label>
 				</div>
 			    
 
 				<div class="input-container">
-					<input type="email" id="email" name="email" required=""  autocomplete="off"><br>
-			   	 	<label for="fname">Email</label>
+					<input type="email" id="email_address" name="email_address" required=""  autocomplete="off"><br>
+			   	 	<label for="email_address">Email address</label>
 				</div>
 			    
 			    <div class="input-container">
@@ -29,10 +29,7 @@
 			    	<label for="password">Password</label>
 			    </div>
 
-			    <div class="input-container">
-			    	<input type="password" id="confpass" name="confpass" required="" ><br>
-			    	<label for="confpass">Confirm Password</label>
-			    </div>
+			    
 
 			    <input type="submit" value="sign up" class="button">
 			</form>
@@ -41,6 +38,8 @@
 	</div>
 	</div>
 	
+	<script type="text/javascript" src="jquery/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+	<script src="js/login.js"></script>
 </body>
 </html>
